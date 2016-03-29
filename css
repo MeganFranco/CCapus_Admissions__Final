@@ -1,0 +1,29 @@
+
+html{
+    background-color: gray;
+    color: navy
+}
+
+body {
+    font-family: serif
+    font-size: 45;
+}
+
+
+#textInput {
+    background-color: lightgrey;
+}
+
+div {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    width: 100%;
+    font-size: larger;
+}
+
+
+
+p {
+    font-size: large;
+}
