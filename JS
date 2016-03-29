@@ -1,0 +1,41 @@
+//var myArray = ["Hello", "Bonjour", "Gutentag"];
+
+function returnTextInput () {
+  var userInput = document.getElementById("textInput").value;
+	
+	//convert string to number
+	var n = Number(userInput);
+	
+//	var output = "";
+    var output = [];
+    //if you do [] instead, each iteration of 'phrases' = 1 indicie in the array
+	
+	//html newline character is <br>
+	var phrases = "<br> Hello! Bonjour! Hola! Gutentag! Ni Hao! Shalom "
+    
+    if (n == NaN || n % 1 != 0) {
+        window.alert("Please enter a whole number")
+        location.reload()
+    } 
+    else if (n < 0 || n > 10) {
+        window.alert("Please enter a whole number between 0 and 10");
+        location.reload();
+    } 
+
+	//run loop ntimes
+	for(i = 0; i < n; i++){
+        if (n < 10 && n % 1 == 0 ){
+		output = output.concat(phrases);
+        }
+	}
+	
+	//change this element
+	document.getElementById('demo').innerHTML = output;
+    console.log(output[0])
+    
+};
+
+//"DONE" BUTTON -- refreshes page
+function refresh (){
+    location.reload();
+}
